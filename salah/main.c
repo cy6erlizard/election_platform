@@ -4,37 +4,22 @@
 
 int main()
 {
-    user u= {20,"mohamed","salah",17,12,1999,2,"28021325",3,"medsalah@gmail.com"};
+    user u4= {20,"mohaaamed","salah",17,12,1999,2,"28021325",3,"medsalah@gmail.com"};
     user u2= {75,"med","salah",17,12,1999,2,"28021325",3,"medsalah@gmail.com"},u3;
     int x ;
+    float W,M,age;
 
-
-/* x=addUser("user.txt",u2);
+/* x=addUser("user.txt",u4);
 
     if(x==1)
         printf("\nadd user successfuly !!!!!!!!!");
     else
         printf("\nfailed add !!!!!!");
+
 */
 
-
-
-
-
-
 /*
-    
-    x=updateUser("user.txt",75,u);
-    if(x==1)
-        printf("\nmodified user successfully!!!!!!!!!");
-    else
-        printf("\nfailed modify!!!!!!!!!!!");
-   */ 
-    
-
-
-/*
-    u3=searchUser("user.txt",20);
+  u3=searchUser("user.txt",75);
     if(u3.CI==-1)
     {
         printf("\nnot found!!!!!!!");
@@ -44,17 +29,32 @@ int main()
          printf("found it !!!!!!!!!!!!\n");
     }
 
-*/
-
     
-   
+  x=updateUser("user.txt",75,u);
+    if(x==1)
+        printf("\nmodified user successfully!!!!!!!!!");
+    else
+        printf("\nfailed modify!!!!!!!!!!!");
+*/
+ 
 
-    x=deleteUser("user.txt",20);
+ /* x=deleteUser("user.txt",20);
     if(x==1)
         printf("\ndelete user successfully!!!");
     else
-        printf("\failed delete !!!!!!");
-    
+        printf("\nfailed delete !!!!!!");*/
+/*
+	TPHF("user.txt",&W,&M);
+	printf("female participation rate = %f",W); 
+	printf("male participation rate = %f",M); 
+  */
+
+
+	age = age_moy("user.txt");
+	printf("moy = %f\n",age);
+	  
     return 0;
+
+
 }
 
